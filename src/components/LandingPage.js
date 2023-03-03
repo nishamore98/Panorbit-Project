@@ -1,7 +1,9 @@
 import * as React from 'react';
 import '../style.css';
+import {Link} from "react-router-dom"
 
-export default function LandingPage() {
+export default function LandingPage(props) {
+  const {getUserInfo} = props
   const [data, setData] = React.useState([]);
   React.useEffect(() => {
     fetch('https://panorbit.in/api/users.json')
@@ -11,7 +13,7 @@ export default function LandingPage() {
       });
   }, []);
   const userInfo = (info) => {
-    window.location.href += `UserInfo`;
+    getUserInfo(info)
   };
   return (
     <>
@@ -24,14 +26,15 @@ export default function LandingPage() {
             {data.length &&
               data.map((item, index) => {
                 return (
-                  <div
-                    onClick={() => userInfo()}
-                    className="user-container"
-                    key={index}
-                  >
-                    <img width="30" src={item.profilepicture} />
-                    {item.name}
-                  </div>
+                  
+            <Link to={`/User/Profile`} onClick={()=>userInfo(item)}
+            key={index}><div
+            className="user-container"
+          >
+            <img width="30" src={item.profilepicture} />
+            {item.name}
+          </div></Link>
+                  
                 );
               })}
           </div>
