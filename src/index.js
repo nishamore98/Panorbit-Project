@@ -7,9 +7,9 @@ const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
 root.render(
-  <StrictMode>
-    <ProSidebarProvider>
-      <App />
-    </ProSidebarProvider>
-  </StrictMode>
+  // <StrictMode>
+  // <ProSidebarProvider>
+  <App />
+  /* </ProSidebarProvider> */
+  // </StrictMode>
 );

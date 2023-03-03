@@ -4,7 +4,7 @@ import UserInfo from './UserInfo';
 
 export default function Profile() {
   return (
-    <h1>hello</h1>
+    <h1></h1>
     // <Sidebar>
     //   <Menu>
     //     <MenuItem> Pie charts </MenuItem>

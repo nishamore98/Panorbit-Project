@@ -6,13 +6,5 @@ import Profile from './components/Profile';
 import UserInfo from './components/UserInfo';
 
 export default function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route exact index path="/" element={<LandingPage />} />
-        <Route index path="/Profile" element={<Profile />} />
-        <Route index path="/UserInfo" element={<UserInfo />} />
-      </Routes>
-    </BrowserRouter>
-  );
+  return <LandingPage />;
 }

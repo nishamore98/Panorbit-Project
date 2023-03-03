@@ -11,7 +11,7 @@ export default function LandingPage() {
       });
   }, []);
   const userInfo = (info) => {
-    window.location.href += `Profile`;
+    window.location.href += `UserInfo`;
   };
   return (
     <>
@@ -25,7 +25,7 @@ export default function LandingPage() {
               data.map((item, index) => {
                 return (
                   <div
-                    onClick={() => userInfo(index)}
+                    onClick={() => userInfo()}
                     className="user-container"
                     key={index}
                   >
