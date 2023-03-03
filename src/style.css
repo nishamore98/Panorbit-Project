@@ -1,5 +1,8 @@
 body {
   font-family: sans-serif;
+  margin: 0;
+}
+.wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,7 +10,6 @@ body {
   height: 100vh;
   background-image: url(./projectPng.png);
   background-repeat: no-repeat;
-
   background-size: cover;
 }
 .container {
@@ -49,6 +51,9 @@ body {
   margin: 1rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid rgb(234, 234, 234);
+}
+.user-container:hover {
+  cursor: pointer;
 }
 img {
   margin-right: 1rem;
