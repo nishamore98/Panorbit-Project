@@ -2,6 +2,19 @@ body {
   font-family: sans-serif;
   margin: 0;
 }
+.d-flex{
+  display: flex;
+}
+.align-center{
+  align-items: center;
+}
+.text-align-center{
+  text-align: center !important;
+}
+.plr{
+  padding: 0.5rem 0.2rem;
+  text-align: center;
+}
 .wrapper {
   display: flex;
   align-items: center;
@@ -46,11 +59,15 @@ body {
   border-radius: 10px;
 }
 .user-container {
+  color: black;
   display: flex;
   align-items: center;
   margin: 1rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid rgb(234, 234, 234);
+}
+.Emp-list a{
+  text-decoration: none;
 }
 .user-container:hover {
   cursor: pointer;
@@ -61,3 +78,85 @@ img {
   height: 30px;
   border-radius: 50%;
 }
+.nav-wrapper{
+  height: 98vh;
+  width: 30%;
+  z-index: 1;
+  position: relative;
+  top: 1vh;
+  left: 0;
+  background-image: linear-gradient(to bottom right, #3c58c8, #5d3cc8);
+  overflow-x: hidden;
+  transition: 0.5s;
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem !important;
+}
+.nav-links{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+.nav-links a{
+  text-decoration: none;
+  color: aliceblue;
+  padding: 0.5rem 0;
+}
+.nav-links hr{
+  width: 100%;
+  border: 1px solid #686ad1;
+}
+.user-profile{
+  width: 100%;
+  margin-right: 1rem;
+}
+.user-box{
+  color:#606060;
+}
+.profile-header{
+  justify-content: space-between;
+  border-bottom: 1px solid #ededed;
+}
+.user-info-container{
+  margin-top: 1rem;
+}
+.Profile-user-info{
+  width: 30%;
+  text-align: center;
+  padding-right: 2rem;
+  border-right: 1px solid #e2e2e2
+}
+h4{
+  color:#747474;
+}
+.Profile-user-info h4{
+  margin: 0.7rem;
+}
+table{
+  padding-bottom: 1rem;
+}
+.table-border-btm{
+  border-bottom: 1px solid #e2e2e2;
+}
+.Profile-user-info img{
+  width: 70%;
+  height: auto;
+  margin: 0;
+}
+.username{
+  color:#939292;
+  font-size: 12px;
+  text-align: right;
+  margin-bottom: 0.5rem;
+}
+td span{
+  color:#747474;
+  font-weight: bold;
+  font-size: 12px;
+  /* white-space: nowrap;
+  overflow: hidden; */
+}
+
