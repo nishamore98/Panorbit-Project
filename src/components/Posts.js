@@ -9,7 +9,7 @@ export default function Posts(props) {
       <NavBar />
       <div className="user-profile">
         <Header
-          heading="ToDo"
+          heading="Posts"
           userInfo={userInfo}
           data={data}
           switchAcc={switchAcc}
